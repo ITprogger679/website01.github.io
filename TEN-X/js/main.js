@@ -45,6 +45,38 @@ if($('.slider__body').length>0){
 }
 
 
+if($('.servicesslider__body').length>0){
+	$('.servicesslider__body').slick({
+		autoplay: true,
+		//infinite: false,
+		dots: true,
+		arrows: false,
+		accessibility:false,
+		slidesToShow:3,
+		autoplaySpeed: 1500,
+		draggable:true,
+		swipe:true,
+		//asNavFor:'',
+		//appendDots:
+		//appendArrows:$('.mainslider-arrows .container'),
+		nextArrow:'<button type="button" class="slick-next"></button>',
+		prevArrow:'<button type="button" class="slick-prev"></button>',
+		responsive: [
+		{
+			breakpoint: 970,
+			settings: {
+				slidesToShow:2,
+			}
+		},{
+			breakpoint: 767.98,
+			settings: {
+				slidesToShow:1,
+			}
+		}
+		]
+	});
+}
+
 //SLICK FIX
 if($('.objects-slider').length>0){
 		var slider=$('.objects-slider');
