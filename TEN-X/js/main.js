@@ -53,7 +53,7 @@ if($('.servicesslider__body').length>0){
 		arrows: false,
 		accessibility:false,
 		slidesToShow:3,
-		autoplaySpeed: 1500,
+		autoplaySpeed: 1300,
 		draggable:true,
 		swipe:true,
 		//asNavFor:'',
