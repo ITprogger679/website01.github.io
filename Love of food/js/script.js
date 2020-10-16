@@ -296,3 +296,13 @@ $('.filter__item').click(function(event){
 
 	return false;
 });
+
+
+let lang_footer = document.querySelector('.langchoice');
+lang_footer.addEventListener("click", function(e) {
+	let lang_choice = document.querySelector('.choicelang-item');
+	lang_footer.classList.toggle('_active');
+	lang_choice.classList.toggle('_active');
+	let lang_arrow = document.querySelector('.lang-footer__arrow');
+	lang_arrow.classList.toggle('_active');
+});
